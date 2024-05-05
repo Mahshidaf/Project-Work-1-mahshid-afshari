@@ -15,7 +15,7 @@ pipeline FlughafenPipeline {
     
     } 
     block FlughafenCSVInterpreter oftype CSVInterpreter {  
-        delimiter: " , ";
+        delimiter: " ; ";
     }
     block FlughafenTableInterpreter oftype TableInterpreter {  
         header: true;
