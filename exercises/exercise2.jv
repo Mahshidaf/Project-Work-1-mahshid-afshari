@@ -30,7 +30,7 @@ pipeline UrbanArborPipeline {
     }
 
     block TreeParsingUnit oftype TextFileInterpreter {
-        encoding: "UTF-8";
+        encoding: "utf8";
     }
 
  block TreeDataCleaner oftype ColumnDeleter {
