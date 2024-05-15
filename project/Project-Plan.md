@@ -30,7 +30,10 @@ Short description of the DataSource.
 
 ## Work Packages
 
-*  Data Acquisition: 
+*  Data Acquisition: [#i][i1]
+
+  [i1]: https://github.com/Mahshidaf/Project-Work-1-mahshid-afshari/issues/1
+  
 *  Data Management: 
 *  Data Exploration: 
 *  Data Analysis: 
