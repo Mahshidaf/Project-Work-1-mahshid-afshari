@@ -30,22 +30,22 @@ Short description of the DataSource.
 
 ## Work Packages
 
-*  Data Acquisition: [#i][i1]
+*  Data Acquisition: [#i1][i1]
 
   [i1]: https://github.com/Mahshidaf/Project-Work-1-mahshid-afshari/issues/1
   
-*  Data Management: [#i][i2]
+*  Data Management: [#i2][i2]
 
     [i2]: https://github.com/Mahshidaf/Project-Work-1-mahshid-afshari/issues/2
 
-*  Data Exploration:[#i][i3]
+*  Data Exploration:[#i3][i3]
 
   [i3]: https://github.com/Mahshidaf/Project-Work-1-mahshid-afshari/issues/3
   
-*  Data Analysis:[#i][i4]
+*  Data Analysis:[#i4][i4]
 
     [i4]: https://github.com/Mahshidaf/Project-Work-1-mahshid-afshari/issues/4
    
-*  predictive modeling and report:[#i][i5]
+*  predictive modeling and report:[#i5][i5]
 
   [i5]: https://github.com/Mahshidaf/Project-Work-1-mahshid-afshari/issues/5
