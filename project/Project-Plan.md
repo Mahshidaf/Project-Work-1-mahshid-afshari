@@ -19,7 +19,8 @@ This research investigates the connection between large cities' air quality and 
 * Data URL: https://www.eea.europa.eu/data-and-maps/daviz/percentage-of-total-green-infrastructure#tab-googlechartid_chart_11
 * Data Type: CSV
 
-  The percentage of urban area that is covered by green spaces in various cities is measured in this dataset. It provides a thorough picture of the distribution and density of urban vegetation by encompassing the sizes and kinds of green areas.
+The percentage of urban area that is covered by green spaces in various cities is measured in this dataset. It provides a thorough picture of the distribution and density of urban vegetation by encompassing the sizes and kinds of green areas.
+
 ### Datasource2: Urban Air Quality
 * Metadata URL:  https://www.who.int/data/gho/data/themes/air-pollution/who-air-quality-database/2022
 * Data URL: https://www.umweltbundesamt.de/en/data/air/air-data
