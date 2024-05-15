@@ -34,7 +34,18 @@ Short description of the DataSource.
 
   [i1]: https://github.com/Mahshidaf/Project-Work-1-mahshid-afshari/issues/1
   
-*  Data Management: 
-*  Data Exploration: 
-*  Data Analysis: 
-*  predictive modeling and report:
+*  Data Management: [#i][i2]
+
+    [i2]: https://github.com/Mahshidaf/Project-Work-1-mahshid-afshari/issues/2
+
+*  Data Exploration:[#i][i3]
+
+  [i3]: https://github.com/Mahshidaf/Project-Work-1-mahshid-afshari/issues/3
+  
+*  Data Analysis:[#i][i4]
+
+    [i4]: https://github.com/Mahshidaf/Project-Work-1-mahshid-afshari/issues/4
+   
+*  predictive modeling and report:[#i][i5]
+
+  [i5]: https://github.com/Mahshidaf/Project-Work-1-mahshid-afshari/issues/5
