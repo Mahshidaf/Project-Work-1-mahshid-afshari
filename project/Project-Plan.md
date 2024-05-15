@@ -1,11 +1,16 @@
 Summary
 
 This project explores the relationship between the density of urban green spaces and air quality in major cities. The objective is to identify if cities with extensive green areas exhibit better air quality compared to those with less greenery. This analysis will consider various green space sizes and their impact on specific air pollutants, aiming to provide data-driven insights for urban planning and environmental policies.
+
+
 Main question
+
 How do variations in the types of vegetation within urban green spaces affect the levels of specific air pollutants across different climatic zones in major cities?
+
 Rationale
 
 Understanding the correlation between green space density and air quality can greatly benefit urban planning by providing a clearer picture of how green spaces contribute to environmental health. Findings from this study could prompt cities to invest more in green infrastructure, potentially leading to improved urban air quality, reduced health risks, and enhanced overall quality of life for city dwellers.
+
 Datasources
 
     Urban Green Spaces
