@@ -22,8 +22,8 @@ This research investigates the connection between large cities' air quality and 
 The percentage of urban area that is covered by green spaces in various cities is measured in this dataset. It provides a thorough picture of the distribution and density of urban vegetation by encompassing the sizes and kinds of green areas.
 
 ### Datasource2: Urban Air Quality
-* Metadata URL:  https://www.who.int/data/gho/data/themes/air-pollution/who-air-quality-database/2022
-* Data URL: https://www.umweltbundesamt.de/en/data/air/air-data
+* Metadata URL: https://registry.opendata.aws/openaq/
+* Data URL: https://api.openaq.org/v1/measurements?country=US&limit=10000&format=csv
 * Data Type: CSV
   
 This dataset includes comprehensive data on the concentrations of several air pollutants in different cities, including PM2.5, PM10, NO2, and O3. It draws attention to trends in air quality and offers a framework for contrasting pollution levels in relation to the amount of green space.
