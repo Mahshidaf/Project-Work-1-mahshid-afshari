@@ -6,7 +6,7 @@ import os
 
 def download_csv(url, save_path):
     response = requests.get(url)
-    response.raise_for_status()  # Ensure we notice bad responses
+    response.raise_for_status()  
     with open(save_path, 'wb') as file:
         file.write(response.content)
     print(f"Downloaded CSV to {save_path}")
