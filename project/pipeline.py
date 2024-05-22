@@ -15,7 +15,7 @@ def download_csv(url, save_path):
 def transform_data(csv_path):
     try:
         df = pd.read_csv(csv_path)
-        # Perform any transformations/cleaning here
+        
         df.columns = [col.strip().replace(" ", "_").lower() for col in df.columns]
         return df
     except pd.errors.ParserError as e:
