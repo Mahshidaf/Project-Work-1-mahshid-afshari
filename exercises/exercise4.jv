@@ -12,46 +12,46 @@ pipeline EnhancedTemperaturesPipeline {
         -> BatteryTemperatureCelsiusToFahrenheitTransformer
         -> TemperaturesLoader;
     
-    // Extract the zip file from the URL
+  
     block TemperaturesExtractor oftype HttpExtractor {
         url: "https://www.mowesta.com/data/measure/mowesta-dataset-20221107.zip";
     }
 
-    // Interpret the zip archive
+
     block ZipArchiveInterpreter oftype ArchiveInterpreter {
         archiveType: "zip";
     }
 
-    // Select the CSV file within the extracted contents
+  
     block TemperaturesFilePicker oftype FilePicker {
         path: "/data.csv";
     }
 
-    // Convert the file to a text file for easier handling
+ 
     block TemperaturesTextFileInterpreter oftype TextFileInterpreter {}
 
-    // Interpret the text file as a CSV
+
     block TemperaturesCSVInterpreter oftype CSVInterpreter {
         delimiter: ";";
     }
 
-    // Select only relevant columns up to "Geraet aktiv"
+
     block GeraetAktivCellRangeSelector oftype CellRangeSelector {
         select: range A1:J*;
     }
 
-    // Delete unnecessary columns beyond the selected range
+  
     block TemperaturesColumnDeleter oftype ColumnDeleter {
         delete: [column F, column G, column H, column I];
     }
 
-    // Rename the columns from German to English
+  
     block HeaderCell1Writer oftype CellWriter {
         at: range A1:F1;
         write: ["id", "producer", "model", "month", "temperature", "battery_temperature"];
     }
 
-    // Interpret the table and define data types for columns
+
     block TemperaturesTableInterpreter oftype TableInterpreter { 
         header: true; 
         columns: [
@@ -64,34 +64,34 @@ pipeline EnhancedTemperaturesPipeline {
         ];
     }
 
-    // Transform temperatures in Celsius to Fahrenheit
+
     transform CelsiusToFahrenheit {
         from Celsius oftype decimal;
         to Fahrenheit oftype decimal;
         Fahrenheit: (Celsius * 9/5) + 32;
     }
 
-    // Apply the temperature transformation
+  
     block TemperatureCelsiusToFahrenheitTransformer oftype TableTransformer {
         inputColumns: ['temperature'];
         outputColumn: 'temperature';
         use: CelsiusToFahrenheit;
     }
 
-    // Apply the battery temperature transformation
+
     block BatteryTemperatureCelsiusToFahrenheitTransformer oftype TableTransformer {
         inputColumns: ['battery_temperature'];
         outputColumn: 'battery_temperature';
         use: CelsiusToFahrenheit;
     }
 
-    // Load the transformed data into an SQLite database
+    
     block TemperaturesLoader oftype SQLiteLoader { 
         table: "temperatures";
         file: "./temperatures.sqlite";
     }
 
-    // Constraints to ensure data validity
+
     valuetype PositiveId oftype integer {
         constraints: [PositiveIdConstraint];
     }
