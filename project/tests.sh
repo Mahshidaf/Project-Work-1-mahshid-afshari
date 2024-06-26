@@ -5,4 +5,4 @@ mkdir -p ./data
 rm -f ./data/*.db
 
 echo "Running data pipeline test !!!"
-python ./project/test.py
+python3 ./project/tests.py  # Ensure this points to the correct file
