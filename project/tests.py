@@ -3,6 +3,7 @@ import unittest
 import logging
 import pandas as pd
 import sqlite3
+import shutil
 
 from pipeline import transform_data, save_to_sqlite
 
@@ -21,7 +22,6 @@ class TestDataPipeline(unittest.TestCase):
         os.makedirs(DATA_DIR, exist_ok=True)
 
     def test_create_and_transform_data(self):
-       
         data = {
             'Column 1': [1, 2],
             'Column 2': [3, 4],
@@ -31,7 +31,6 @@ class TestDataPipeline(unittest.TestCase):
         test_csv_path = os.path.join(DATA_DIR, 'test_transform.csv')
         df.to_csv(test_csv_path, index=False)
         logging.info(f'Manually created data and saved to {test_csv_path}')
-        
         
         transformed_df = transform_data(test_csv_path)
         expected_columns = ['column_1', 'column_2', 'column_3']
@@ -45,7 +44,6 @@ class TestDataPipeline(unittest.TestCase):
         expected_df = pd.DataFrame(expected_data)
         pd.testing.assert_frame_equal(transformed_df, expected_df)
         
-      
         os.remove(test_csv_path)
 
     def test_save_to_sqlite(self):
@@ -62,7 +60,6 @@ class TestDataPipeline(unittest.TestCase):
         table_exists = cursor.fetchone()
         self.assertIsNotNone(table_exists)
         
-     
         cursor.execute("SELECT * FROM test_table")
         rows = cursor.fetchall()
         expected_rows = [(1, 'a'), (2, 'b'), (3, 'c')]
@@ -79,7 +76,7 @@ class TestDataPipeline(unittest.TestCase):
         if os.path.isfile(DB_PATH):
             os.remove(DB_PATH)
         if os.path.exists(DATA_DIR):
-            os.rmdir(DATA_DIR)
+            shutil.rmtree(DATA_DIR)  # This will remove the directory and all its contents
 
 if __name__ == "__main__":
     unittest.main()
