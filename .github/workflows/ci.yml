@@ -30,12 +30,3 @@ jobs:
       
       - name: Run tests
         run: ./project/tests.sh
-
-
-
-    
-
-
-    
-
-   
