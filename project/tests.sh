@@ -1,9 +1,8 @@
 #!/bin/bash
 
-# Exit immediately if a command exits with a non-zero status
-set -e
+echo "Setting up test environment !!!"
+mkdir -p ./data
+rm -f ./data/*.db
 
-echo "Running tests..."
-
-# Assuming tests.sh is called from the root directory and tests.py is inside 'project'
-pytest project/tests.py
+echo "Running data pipeline test !!!"
+python ./project/test.py
