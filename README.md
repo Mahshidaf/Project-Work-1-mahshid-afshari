@@ -1,3 +1,7 @@
+## Project
+# Predicting the effect of Air Pollutants in Urban Geern Spaces
+
+This research investigates the connection between large cities' air quality and the density of urban green spaces. The aim of this study is to determine whether cities with larger green spaces have higher quality air than those with less green spaces. In order to give data-driven insights for environmental policy and urban planning, this analysis will take into account different sizes of green spaces and their effects on particular air pollutants. Urban planning may benefit immensely from an understanding of the relationship between air quality and green space density, as it helps to clarify the role that green spaces play in environmental health.
 # Exercise Badges
 
 ![](https://byob.yarr.is/Mahshidaf/Project-Work-1-mahshid-afshari/score_ex1) ![](https://byob.yarr.is/Mahshidaf/Project-Work-1-mahshid-afshari/score_ex2) ![](https://byob.yarr.is/Mahshidaf/Project-Work-1-mahshid-afshari/score_ex3) ![](https://byob.yarr.is/Mahshidaf/Project-Work-1-mahshid-afshari/score_ex4) ![](https://byob.yarr.is/Mahshidaf/Project-Work-1-mahshid-afshari/score_ex5)
